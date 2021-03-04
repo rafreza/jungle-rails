@@ -6,8 +6,8 @@
 
   <% if enhanced_cart.empty? %>
     <div class="alert alert-danger">
-      Your cart is empty!<br>
-      Click here to <%= link_to 'Continue Shopping', :root %>
+      <h2> Your cart is empty!</h2><br>
+      <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
     </div>
 
   
