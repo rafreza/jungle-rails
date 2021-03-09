@@ -36,7 +36,7 @@ RSpec.describe Product, type: :model do
     end
 
     it "is invalid without category attribute" do 
-      @category = Category.new(name: "Winter Clothes")
+      @category = Category.new(name: "Pants")
       @product = Product.new(
         name: "Classic Jeans",
         category: nil,
@@ -53,7 +53,7 @@ RSpec.describe Product, type: :model do
     end
 
     it "is invalid without quantity attribute" do 
-      @category = Category.new(name: "Winter Clothes")
+      @category = Category.new(name: "Pants")
       @product = Product.new(
         name: "Classic Jeans",
         category: @category,
@@ -70,7 +70,7 @@ RSpec.describe Product, type: :model do
     end
 
     it "is invalid without price attribute" do 
-      @category = Category.new(name: "Winter Clothes")
+      @category = Category.new(name: "Pants")
       @product = Product.new(
         name: "Classic Jeans",
         category: @category,
