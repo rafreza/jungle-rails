@@ -2,6 +2,18 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Features
+
+* Products can now display a "Sold Out" badge if the product is unavailable
+* Order that successfully process now have a confirmation page that lists the items they purchased, the total price and the mail to which the order confirmation is sent to
+* Admins can now login to the admin page and add new products and categories as they see fit
+* Users can register, login and logout with all the necessary validation and password security required for an ecommerce page
+
+## Fixed Bugs
+
+* Admin security is now properly implemented with HTTP authorization for the admin's username and password
+* Display changes for when the user visits the "My Cart" page with no items for checkout, prompting them to continue shopping
+
 
 ## Setup
 
@@ -25,3 +37,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Testing Environments
+
+* RSPEC
+* Database Cleaner
+* Capybara
+* PhantomJS/Poltergeist
