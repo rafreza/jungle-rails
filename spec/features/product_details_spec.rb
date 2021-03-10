@@ -25,7 +25,6 @@ RSpec.feature "Users can navigate from the home page.", type: :feature, js: true
 
     expect(page).to have_css '.product-detail'
 
-
     save_screenshot('test2.png')
 
 
